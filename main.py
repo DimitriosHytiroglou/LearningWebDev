@@ -33,5 +33,6 @@ class TestHandler(webapp2.RequestHandler):
 		self.response.headers['Content-Type'] = 'text/plain'
 		self.response.out.write(self.request)
 
-app = webapp2.WSGIApplication([('/',MainPage)],
+app = webapp2.WSGIApplication([('/',MainPage),
+							   ('/testform', TestHandler)],
 								debug=True)
