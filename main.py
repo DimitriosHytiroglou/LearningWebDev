@@ -14,8 +14,18 @@
 
 import webapp2
 
+
 form="""
-<form action="http://www.google.com/search">
+
+<form>
+	<input type="radio" name="q" value="1">
+	<input type="radio" name="q" value="2">
+	<input type="radio" name="q" value="3">
+	<br>
+	<input type="submit">
+</form>
+
+<form action="/testform">
 	<input name="q">
 	<input type="submit">
 </form>
