@@ -18,11 +18,25 @@ import webapp2
 form="""
 
 <form>
-	<input type="radio" name="q" value="1">
-	<input type="radio" name="q" value="2">
-	<input type="radio" name="q" value="3">
+	<label>
+	One<input type="radio" name="R" value="1">
+	</label>
+	<label>
+	Two<input type="radio" name="R" value="2">
+	</label>
+	<label>
+	Three<input type="radio" name="R" value="3">
+	</label>
 	<br>
 	<input type="submit">
+</form>
+
+<form>
+	<select name="S">
+		<option>One</option>
+		<option>Two</option>
+		<option>Three</option>
+	</select>
 </form>
 
 <form action="/testform">
